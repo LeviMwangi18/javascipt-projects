@@ -1,108 +1,85 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #1A237E;
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-.stats-container{
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: solid 1px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+:root{
+  --background-color: #abc270;
+  --card-colors: #fff;
+  --text-color: #000;
+  --icon-color: #fda769;
+  --button-text: #000;
+}
+body{
+  background-color: var(--card-colors);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section{
+  background-color: var(--background-color);
+  width: 450px;
+  padding: 30px 10px;
+  height: auto;
   border-radius: 10px;
-  padding: 10px;
-  width: 100%;
-  margin-bottom: 30px;
+}
+.title{
+  margin-bottom: 20px;
+  border: solid var(--button-text) 2.5px;
+  padding: 10px 25px;
+  background: transparent;
   text-align: center;
+  border-radius: 8px;
 }
-
-.details h1{
+.title .header h1{
   font-size: 1.5rem;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 900;
 }
-.stats{
-  margin-top: 1%;
+.title .progress{
+  display: block;
+  width: 100%;
+  height: 8px;
+  background: #fda769;
+  border-radius: 10px;
+  margin: 10px;
 }
-.stats p{
-  font-size: 2rem;
-  padding: 10px 5px;
-  background: #000;
-  color: white;
+.taskNumber{
+  background: #fda769;
   border-radius: 50%;
-  width: fit-content;
-  height: fit-content;
+  text-align: center;
+  padding: 5px;
   margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
 }
-form{
+.form form{
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 form input{
   width: 100%;
-  margin-right: 10px;
-  height: 50px;
-  padding: 0 15px;
-  border-radius: 5px;
-  font-size: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background: transparent;
-  border: solid 1px #000;
-}
-form input::placeholder{
-  color: #000;
-  font-size: 1rem;
-  font-weight: 600;
-}
-form button{
-  height: 60px;
-  width: 80px;
-  border-radius: 50%;
-  background:#101517;
-  color: white;
-  font-size: 1.5rem;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.buttons button{
-  background: #1A237E;
-  color: white;
-  border: none;
-  padding: 5px;
-  border-radius: 5px;
-  cursor: pointer;
   margin-right: 5px;
-}
-.progressBar{
-  width: 100%;
-  height: 5px;
-  background-color: #000;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
   border-radius: 10px;
-  margin-top: 10px;  
+  border: solid #fda769 1px;
 }
-.progress{
-  width: 80%;
-  height: 5px;
-  background-color: #0B94D8;
-  border-radius: 10px;
-  transition: all 0.5s ease;
+form #addBtn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fda769;
 }
